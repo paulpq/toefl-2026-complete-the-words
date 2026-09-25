@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ten original TOEFL 2026 Complete the Words practice passages, with answer checks and explanations.">
+  <title>Wordwork — TOEFL Reading Practice</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232543d5'/%3E%3Ctext x='5' y='24' font-family='Georgia' font-size='26' fill='white'%3Ew%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <script src="exercises.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to exercise</a>
+  <header class="topbar">
+    <a href="./" class="brand" aria-label="Wordwork home"><span class="brand-icon">w</span>wordwork<span class="brand-period">.</span></a>
+    <div class="header-note">TOEFL READING <span class="edition">2026 format</span></div>
+  </header>
+  <div class="workspace">
+    <aside class="sidebar" aria-label="Practice collection">
+      <div class="collection-label">YOUR PRACTICE SET</div>
+      <h2>One word at a time.</h2>
+      <p class="sidebar-description">10 passages. 100 missing words.<br>A little closer with every answer.</p>
+      <div class="progress-copy"><span id="progress-text">0 of 10 checked</span><span id="progress-percent">0%</span></div>
+      <progress id="set-progress" value="0" max="10" aria-label="Passages checked"></progress>
+      <nav id="exercise-nav" aria-label="Choose a passage"></nav>
+      <div class="sidebar-bottom"><span class="small-square"></span> Original practice · Self-paced</div>
+    </aside>
+    <main id="main">
+      <div class="page-intro"><div><p class="eyebrow">READING / COMPLETE THE WORDS</p><h1>Find the missing pieces.</h1></div><span class="set-label">PRACTICE SET 01</span></div>
+      <section class="exercise-card" aria-labelledby="exercise-title">
+        <div class="card-top"><span class="passage-counter" id="passage-counter"></span><span class="topic" id="topic"></span></div>
+        <div class="title-row"><h2 id="exercise-title"></h2><span id="word-count"></span></div>
+        <p class="directions" id="directions">Type <strong>only the missing letters</strong>. Each dash is one letter. Read the whole paragraph for context.</p>
+        <form id="exercise-form" novalidate>
+          <p class="passage" id="passage"></p>
+          <div class="card-actions"><div class="primary-actions"><button class="button primary" type="submit">Check answers <span aria-hidden="true">↗</span></button><button class="button secondary" type="button" id="reveal" aria-expanded="false" aria-controls="review">Show answer key</button></div><span class="filled-count" id="filled-count" aria-live="polite">0 / 10 filled</span></div>
+        </form>
+        <div id="feedback" class="feedback" role="status" aria-live="polite" hidden></div>
+      </section>
+      <section id="review" class="review" aria-labelledby="review-title" hidden>
+        <div class="review-header"><div><p class="eyebrow">THE REASON BEHIND THE ANSWER</p><h2 id="review-title">Check your reasoning.</h2></div><span class="review-tag">10 explanations</span></div>
+        <p class="review-note">Compare the missing letters, then use the grammar and context clues to verify the complete word.</p>
+        <div id="answer-list"></div>
+        <details class="completed-text"><summary>Read the completed passage</summary><p id="full-passage"></p></details>
+      </section>
+      <div class="navigation-row"><button class="text-button" id="previous" type="button">← Previous</button><button class="text-button reset" id="reset" type="button">Reset passage</button><button class="text-button" id="next" type="button">Next passage →</button></div>
+      <div class="study-note"><span class="note-symbol" aria-hidden="true">i</span><p><strong>A useful approach</strong><br>Start with the meaning, check the grammar, then count the letters. Use <kbd>Tab</kbd> to move between blanks.</p></div>
+      <details class="about"><summary>About the 2026 format & official practice</summary><div>
+        <p>ETS describes “Complete the Words” as a short academic passage of about 70–100 words, with an intact first sentence and 10 partially missing words. Following that sentence, the second half of every second word is generally removed.</p>
+        <p>These 10 passages are original practice written to follow that pattern. They are not official ETS test questions, and the practice score is not a TOEFL score prediction. The answer key explains the intended completion for each blank.</p>
+        <p>Verify the format and try official questions: <a href="https://www.ets.org/content/dam/ets-org/pdfs/toefl/toefl-ibt-test-overview.pdf" target="_blank" rel="noreferrer">ETS overview and sample tasks ↗</a> · <a href="https://www.ets.org/toefl/test-takers/ibt/about/content/reading.html" target="_blank" rel="noreferrer">ETS Reading section ↗</a> · <a href="https://www.ets.org/toefl/test-takers/ibt/prepare/sample-test-jan-2026-1.html" target="_blank" rel="noreferrer">Official 2026 practice test ↗</a></p>
+      </div></details>
+      <footer>Independent practice. Not affiliated with or endorsed by ETS. TOEFL is a registered trademark of ETS.<br>Answers stay in this tab while you practice. Refreshing starts a new session.</footer>
+    </main>
+  </div>
+</body>
+</html>
