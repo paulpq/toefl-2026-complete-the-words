@@ -1,6 +1,6 @@
 # Wordwork — TOEFL 2026 reading practice
 
-Two original practice activities: 10 Complete the Words passages with 100 blanks, plus 10 Complete the Sentences questions. Both include automatic checking and an explanation for every answer. All site assets are local; there are no packages to install, third-party fonts, tracking, or hosted services.
+Three original practice activities: 10 Complete the Words passages with 100 blanks, 10 Complete the Sentences questions, and 10 Build the Sentences questions. Each includes automatic checking and answer proof. All site assets are local; there are no packages to install, third-party fonts, tracking, or hosted services.
 
 ## Run locally
 
@@ -17,6 +17,8 @@ You can also run `python3 -m http.server 8765 --bind 127.0.0.1` from this folder
 - A checked score is invalidated when you edit an entry, so you always know when to check again.
 
 Use the activity switch at the top of either page to open **Complete the Sentences**. Each question asks you to choose the best completion. After checking, the proof panel shows the completed sentence, the grammar or meaning rule, and why the other choices do not work. This activity is original extra practice; it is not presented as a distinct official TOEFL task.
+
+Use **Build the Sentences** to arrange scrambled academic words. Click words into the sentence area, remove a word by clicking it there, then check the order. The proof panel shows the intended sentence and the structure to look for.
 
 ## Content and sources
 
