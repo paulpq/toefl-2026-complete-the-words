@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ten original academic sentence-completion questions with automatic checking and clear grammar explanations.">
+  <title>Complete the Sentences — Wordwork</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232543d5'/%3E%3Ctext x='5' y='24' font-family='Georgia' font-size='26' fill='white'%3Ew%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <script src="sentences.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to exercise</a>
+  <header class="topbar">
+    <a href="./" class="brand" aria-label="Wordwork home"><span class="brand-icon">w</span>wordwork<span class="brand-period">.</span></a>
+    <div class="header-note">TOEFL PRACTICE <span class="edition">Extra practice</span></div>
+  </header>
+  <div class="workspace">
+    <aside class="sidebar" aria-label="Sentence practice collection">
+      <div class="collection-label">YOUR PRACTICE SET</div>
+      <h2>One sentence at a time.</h2>
+      <p class="sidebar-description">10 questions. Grammar and meaning.<br>Proof for every answer.</p>
+      <div class="progress-copy"><span id="progress-text">0 of 10 checked</span><span id="progress-percent">0%</span></div>
+      <progress id="set-progress" value="0" max="10" aria-label="Questions checked"></progress>
+      <nav id="sentence-nav" aria-label="Choose a question"></nav>
+      <div class="sidebar-bottom"><span class="small-square"></span> Original practice · Self-paced</div>
+    </aside>
+    <main id="main">
+      <nav class="mode-switch" aria-label="Choose a practice activity">
+        <a href="index.html">Complete the Words</a>
+        <a href="sentences.html" aria-current="page">Complete the Sentences</a>
+      </nav>
+      <div class="page-intro"><div><p class="eyebrow">GRAMMAR &amp; MEANING / COMPLETE THE SENTENCES</p><h1>Choose what completes the thought.</h1></div><span class="set-label">PRACTICE SET 02</span></div>
+      <section class="exercise-card" aria-labelledby="exercise-title">
+        <div class="card-top"><span class="passage-counter" id="question-counter">QUESTION 01 / 10</span><span class="topic" id="topic"></span></div>
+        <div class="title-row"><h2 id="exercise-title"></h2><span class="question-position" id="skill"></span></div>
+        <p class="directions" id="directions">Choose the option that makes the sentence grammatically correct and preserves its meaning.</p>
+        <form id="sentence-form" novalidate>
+          <p class="sentence-prompt" id="sentence-prompt"></p>
+          <fieldset class="option-list" id="option-list"><legend>Answer choices</legend></fieldset>
+          <div class="card-actions"><div class="primary-actions"><button class="button primary" type="submit">Check answer <span aria-hidden="true">↗</span></button><button class="button secondary" type="button" id="reveal" aria-expanded="false" aria-controls="proof">Show explanation</button></div><span class="filled-count" id="selection-state">No answer selected</span></div>
+        </form>
+        <div id="feedback" class="feedback" role="status" aria-live="polite" hidden></div>
+      </section>
+      <section id="proof" class="sentence-proof" aria-labelledby="proof-title" hidden>
+        <div class="review-header"><div><p class="eyebrow">PROOF &amp; EXPLANATION</p><h2 id="proof-title">Verify the answer.</h2></div><span class="review-tag" id="answer-tag"></span></div>
+        <div class="proof-result" id="proof-result"><span class="proof-dot"></span><span id="proof-status"></span></div>
+        <p class="completed-sentence" id="completed-sentence"></p>
+        <div class="proof-grid"><div><h3>Why it is correct</h3><p id="explanation"></p></div><div><h3>Why the others do not work</h3><p id="distractors"></p></div></div>
+      </section>
+      <div class="navigation-row"><button class="text-button" id="previous" type="button">← Previous</button><button class="text-button reset" id="reset" type="button">Reset question</button><button class="text-button" id="next" type="button">Next question →</button></div>
+      <div class="study-note"><span class="note-symbol" aria-hidden="true">i</span><p><strong>A useful approach</strong><br>Read the entire sentence first. Identify the relationship between its ideas, then test each option for both grammar and meaning.</p></div>
+      <details class="about"><summary>About this extra practice set</summary><div>
+        <p>These 10 questions are original sentence-level grammar and meaning practice. “Complete the Sentences” is an extra activity on this site, not the name of a distinct official 2026 TOEFL task.</p>
+        <p>Each question has one intended answer. Open the explanation to see the completed sentence, the supporting grammar rule, and why the remaining choices do not fit.</p>
+      </div></details>
+      <footer>Independent practice. Not affiliated with or endorsed by ETS. TOEFL is a registered trademark of ETS.<br>Answers stay in this tab while you practice. Refreshing starts a new session.</footer>
+    </main>
+  </div>
+</body>
+</html>
